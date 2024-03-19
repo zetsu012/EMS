@@ -1,0 +1,41 @@
+<div ng-controller="loginController" class="login-container">
+    <h2>Login</h2>
+    <form name="loginForm" ng-submit="submitForm()">
+      <label for="usern">Username (Numbers only):</label>
+      <input type="text" id="usern" name="usern" ng-model="user.usern" ng-pattern="/^[0-9]+$/" required>
+      
+
+      <label for="password">Password (More than 8 characters):</label>
+      <input type="password" id="password" name="password" ng-model="user.password" ng-minlength="9" required>
+      
+        <nav>
+      <a [routerLink]="['/home']" routerLinkActive="router-link-active" >Login</a>
+      </nav>
+      <router-outlet></router-outlet>
+      
+    </form>
+</div>
+<script>
+    import * as angular from 'angular';
+
+   const app = angular.module('loginApp', []);
+
+// Define AngularJS controller
+    app.controller('loginController', ['$scope', function($scope) {
+        // Define scope variables
+        $scope.user = {};
+        $scope.isFormSubmitted = false;
+
+        // Define function to submit form
+        $scope.submitForm = function() {
+            $scope.isFormSubmitted = true;
+
+            if ($scope.loginForm.$valid) {
+                console.log('Login successful');
+            } 
+            else {
+                console.log('Error');
+            }
+        };
+    }]);
+</script>
