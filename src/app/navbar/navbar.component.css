@@ -1,0 +1,14 @@
+.header{
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 2vw;
+}
+.logo{
+    margin-left: 45vw;
+}
+#nav-menu{
+    margin-top: 10rem;;
+}
+.offcanvas-body{
+    margin-right: 30rem;
+}
