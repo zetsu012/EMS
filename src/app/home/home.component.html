@@ -1,1 +1,52 @@
-<p>home works!</p>
+<main class="main">
+    <div class="header">
+      <img src="assets/download.jpg" alt="Logo" width="150px" height="150px">
+      <h2 style="margin-bottom: 0;">Electoral Roll Management System</h2>
+      <h1 style="margin-top: 0;">STATE ELECTION COMMISSION, SIKKIM</h1>
+      <hr style="margin-bottom: 0;">
+    </div>
+  
+    <div class="navbar1" >
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Commission</a>
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/dashboard']">
+                  <select class="form-select" aria-label="Default select example" id = "option">
+                    <option selected>Select...</option>
+                    <option value="electoral details" >Electoral Details</option>
+                    <option value="voter slip">Voter Slip</option>
+                  </select>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" [routerLink]="['/dashboard']">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Select...</option>
+                    <option value="electoral details">Electoral Details</option>
+                    <option value="voter slip">Voter Slip</option>
+                  </select>
+                </a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  
+    <div class="footer1">
+      <h4 class="foot1"><em>Designed and developed by SMIT students</em></h4>
+    </div>
+  </main>
